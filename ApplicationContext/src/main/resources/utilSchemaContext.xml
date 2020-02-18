@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util
+       https://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!-- Creation of a bean using the util namespace to define the gender from an enum -->
+    <bean id="aMan" class="com.infinity.spring.applicationcontext.domain.Person">
+        <property name="name" value="Steve Rogers" />
+        <property name="age" value="1000" />
+        <property name="gender">
+            <util:constant static-field="com.infinity.spring.applicationcontext.domain.Gender.MALE" />
+        </property>
+    </bean>
+
+    <!-- Reading a properties file and creating a bean with the content-->
+    <util:properties id="jdbcProperties" location="jdbc-configuration.properties" />
+
+    <!-- Creation of a simple list -->
+    <util:list id="avengersList">
+        <value>Iron Man</value>
+        <value>Black Widow</value>
+        <value>Captain America</value>
+    </util:list>
+
+    <!-- Creation of a simple map -->
+    <util:map id="avengersNames">
+        <entry key="Iron Man" value="Tony Stark" />
+        <entry key="Black Widow" value="Natasha Romanoff" />
+        <entry key="Captain America" value="Steve Rogers" />
+        <entry key="all" value-ref="avengersList" />
+    </util:map>
+</beans>
