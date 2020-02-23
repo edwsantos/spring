@@ -3,7 +3,7 @@
 In spring, when we're defining a bean, we can define how the instances of that bean are going to be created and returned 
 by the Spring container.
 
-At the moment, spring offers 7 different bean scopes:
+At the moment, spring offers 5 different bean scopes:
 * **Singleton**: This is the default value if no scope is defined for a bean. 
 In this case, the container creates a single instance of a bean and all requests to the container for that bean are going 
 to return the same instance, which is cached.   
@@ -28,7 +28,7 @@ lifecycle of a WebSocket.
 from the above list, the last 4 items are only available in a web-aware application.
 
 ## Some key scenarios
-1. **Singleton bean with prototype property:**
+##### Singleton bean with prototype property:
 In case of having a dependency like the following:  
 ```
 @Scope(SCOPE_SINGLETON)
@@ -48,3 +48,12 @@ public class B{
 so that, we have a Singleton bean which has an attribute that is a Prototype bean, then the injection happens when the 
 Singleton object is instantiated so injection just happen once. Thus the injected class B will be always the same instance
 even though it was defined as Prototype scope.
+
+If we need a singleton-scoped bean that uses a new instance of a prototype-scoped bean each time, we can use _Method Injection_
+instead of a simple dependency injection by property. 
+
+##### Prototype scope beans destruction callbacks:
+A very important point for beans scoped as prototype is that Spring does not manage their complete lifecycle.
+The container instantiates, configures and makes it available to the client but the destruction methods are not called 
+so the client must implement its own strategies to release expensive resources consumed by prototype beans (such as bean post-processors).
+
