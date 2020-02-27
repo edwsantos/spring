@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2241176-bad3-4941-bdec-6506f04de66c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/BeanScopesApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/SingletonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/domain/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/prototype/PersonPrototype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/prototype/PrototypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/request/PersonRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/request/RequestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/session/PersonSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/session/SessionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BeanScopes/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/BeanScopes/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BeanScopes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BeanScopes/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/SingletonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/singleton/SingletonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/domain/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/singleton/PersonSingleton.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,71 +27,33 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BeanScopes/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="250">
-                <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
+              <first_editor relative-caret-position="335">
+                <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/SingletonController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/session/PersonSession.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="32" column="81" selection-start-line="32" selection-start-column="81" selection-end-line="32" selection-end-column="81" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1173#1174#0" expanded="true" />
-                <element signature="e#1239#1240#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/domain/Person.java">
+        <entry file="file://$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/session/SessionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-              <folding>
-                <element signature="e#279#280#0" expanded="true" />
-                <element signature="e#306#307#0" expanded="true" />
-                <element signature="e#346#347#0" expanded="true" />
-                <element signature="e#378#379#0" expanded="true" />
-                <element signature="e#405#406#0" expanded="true" />
-                <element signature="e#431#432#0" expanded="true" />
-                <element signature="e#466#467#0" expanded="true" />
-                <element signature="e#496#497#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/BeanScopesApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#199#200#0" expanded="true" />
-                <element signature="e#231#232#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BeanScopes/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+            <state relative-caret-position="266">
+              <caret line="24" column="90" selection-start-line="24" selection-start-column="90" selection-end-line="24" selection-end-column="90" />
             </state>
           </provider>
         </entry>
@@ -123,7 +89,6 @@
         <option value="$PROJECT_DIR$/ApplicationContext/src/main/resources/contextSchemaContext.xml" />
         <option value="$PROJECT_DIR$/ApplicationContext/src/main/java/com/infinity/spring/applicationcontext/ContextSchemaExample.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/BeanScopes/README.md" />
         <option value="$PROJECT_DIR$/BeanScopes/src/main/java/SingletonController.java" />
         <option value="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/SingletonController.java" />
         <option value="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/BeanScopesApplications.java" />
@@ -131,6 +96,17 @@
         <option value="$PROJECT_DIR$/BeanScopes/pom.xml" />
         <option value="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/domain/Person.java" />
         <option value="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/SingletonController.java" />
+        <option value="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/singleton/PersonSingleton.java" />
+        <option value="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/prototype/Person.java" />
+        <option value="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/prototype/PersonPrototype.java" />
+        <option value="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/prototype/PrototypeController.java" />
+        <option value="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/request/PersonRequest.java" />
+        <option value="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/singleton/SingletonController.java" />
+        <option value="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/session/RequestController.java" />
+        <option value="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/request/RequestController.java" />
+        <option value="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/session/PersonSession.java" />
+        <option value="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/session/SessionController.java" />
+        <option value="$PROJECT_DIR$/BeanScopes/README.md" />
       </list>
     </option>
   </component>
@@ -149,17 +125,16 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="646" />
-    <option name="y" value="-1088" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="955" />
+    <option name="y" value="-1007" />
+    <option name="width" value="1200" />
+    <option name="height" value="646" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,11 +177,49 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="beanscopes" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SpringExamples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="BeanScopes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="beanscopes" type="462c0819:PsiDirectoryNode" />
+              <item name="prototype" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringExamples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="BeanScopes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="beanscopes" type="462c0819:PsiDirectoryNode" />
+              <item name="request" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringExamples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="BeanScopes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="beanscopes" type="462c0819:PsiDirectoryNode" />
+              <item name="singleton" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringExamples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="BeanScopes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -216,22 +229,26 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/BeanScopes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/session" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.infinity.spring.applicationcontext.domain" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.infinity.spring.applicationcontext" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MisProyectos\Java\GitHubRepositories\spring\BeanScopes\src\main\java\com\infinity\spring\beanscopes\session" />
+      <recent name="D:\MisProyectos\Java\GitHubRepositories\spring\BeanScopes\src\main\java\com\infinity\spring\beanscopes" />
+      <recent name="D:\MisProyectos\Java\GitHubRepositories\spring\BeanScopes\src\main\java\com\infinity\spring\beanscopes\prototype" />
       <recent name="D:\MisProyectos\Java\GitHubRepositories\spring\BeanScopes" />
       <recent name="D:\MisProyectos\Java\GitHubRepositories\spring\ApplicationContext\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.infinity.spring.beanscopes.request" />
+      <recent name="com.infinity.spring.applicationcontext" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.infinity.spring.applicationcontext.domain" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -265,7 +282,7 @@
       <module name="BeanScopes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.infinity.spring.beanscopes.*" />
+          <option name="PATTERN" value="com.infinity.spring.beanscopes.singleton.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -306,7 +323,8 @@
       <updated>1581779906242</updated>
       <workItem from="1581779907774" duration="17057000" />
       <workItem from="1581985134022" duration="8839000" />
-      <workItem from="1582476258532" duration="5856000" />
+      <workItem from="1582476258532" duration="6155000" />
+      <workItem from="1582762000291" duration="5545000" />
     </task>
     <task id="LOCAL-00001" summary="Adding examples to Application Context project: &#10;ContainerInstantiationDifference&#10;UtilSchema&#10;ContextSchema">
       <created>1581797257586</created>
@@ -329,49 +347,56 @@
       <option name="project" value="LOCAL" />
       <updated>1581994784739</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adding first example of singleton in Bean Scope project">
+      <created>1582490318948</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582490318948</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31752000" />
+    <option name="totallyTimeSpent" value="37596000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="646" y="-1088" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Web" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21428572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.26333332" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.32995737" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.27345416" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +405,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding examples to Application Context project: &#10;ContainerInstantiationDifference&#10;UtilSchema&#10;ContextSchema" />
     <MESSAGE value="Bean Scopes project module initial creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bean Scopes project module initial creation" />
+    <MESSAGE value="Adding first example of singleton in Bean Scope project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding first example of singleton in Bean Scope project" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ApplicationContext/src/main/java/asd.java" />
@@ -507,20 +533,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BeanScopes/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="250">
-            <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BeanScopes/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/prototype.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/prototype/PersonPrototype.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -530,38 +563,72 @@
           <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/domain/Person.java">
+    <entry file="file://$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/singleton/PersonSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-          <folding>
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/SingletonController.java">
+    <entry file="file://$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/singleton/SingletonController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="32" column="81" selection-start-line="32" selection-start-column="81" selection-end-line="32" selection-end-column="81" />
+        <state relative-caret-position="385">
+          <caret line="35" column="122" selection-start-line="35" selection-start-column="122" selection-end-line="35" selection-end-column="122" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1173#1174#0" expanded="true" />
-            <element signature="e#1239#1240#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/request/PersonRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/prototype/PrototypeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="32" column="78" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/request/RequestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="100" lean-forward="true" selection-start-line="17" selection-start-column="100" selection-end-line="17" selection-end-column="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/session/PersonSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BeanScopes/src/main/java/com/infinity/spring/beanscopes/session/SessionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="24" column="90" selection-start-line="24" selection-start-column="90" selection-end-line="24" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BeanScopes/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="335">
+            <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

@@ -18,14 +18,16 @@ management (Stateful), however there are many other scenarios where the prototyp
 * **Session**: In this case, the container creates an instance each HTTP session so the same instance will be returned 
 the container receives a request from the same session.
 
-* **Application**: The container creates an instance of the bean for each ServletContext, and due to an spring 
-web application can have several servlet context, the developer will receive the same instances if the request is from 
-the same ServletContext.
+* **Application**: The container creates an instance of the bean for each Spring application context, and due to an spring 
+web application can have several application context, the developer will receive the same instances if the request is from 
+the same application context.
  
 * **Websocket**: In this case, the container will create an instance of the bean for each request produced within the 
 lifecycle of a WebSocket. 
 
 from the above list, the last 4 items are only available in a web-aware application.
+
+And, in addition, Spring offers the possibility of creating our own custom scopes with different names and lifecycle. 
 
 ## Some key scenarios
 ##### Singleton bean with prototype property:

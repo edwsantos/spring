@@ -1,9 +1,11 @@
-package com.infinity.spring.beanscopes.domain;
+package com.infinity.spring.beanscopes.session;
 
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.SessionScope;
 
 @Component
-public class Person {
+@SessionScope
+public class PersonSession {
     private String name;
     private int age;
 
